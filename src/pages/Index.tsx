@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Code, Users, Zap, CheckCircle, Sparkles, Award, Target, TrendingUp, Shield, Clock } from "lucide-react";
+import heroTechBg from "@/assets/hero-tech-bg.jpg";
+import sidePattern from "@/assets/side-pattern-1.jpg";
+import sectionBg from "@/assets/section-bg.jpg";
 
 const Index = () => {
   return (
@@ -12,8 +15,27 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--gradient-hero))] opacity-50"></div>
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 z-0 opacity-30"
+          style={{
+            backgroundImage: `url(${heroTechBg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--gradient-hero))] opacity-60"></div>
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        
+        {/* Side Pattern Decoration */}
+        <div 
+          className="absolute right-0 top-0 w-1/4 h-full opacity-20 hidden lg:block"
+          style={{
+            backgroundImage: `url(${sidePattern})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'left center',
+          }}
+        />
         
         <div className="container mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6 animate-fade-in">
@@ -111,8 +133,17 @@ const Index = () => {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
-        <div className="container mx-auto">
+      <section className="relative py-24 px-4 sm:px-6 lg:px-8 bg-muted/30 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 z-0 opacity-10"
+          style={{
+            backgroundImage: `url(${sectionBg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
               Our <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Approach</span>
@@ -150,8 +181,17 @@ const Index = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto">
+      <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        {/* Side Pattern Decoration */}
+        <div 
+          className="absolute left-0 top-1/4 w-1/5 h-2/3 opacity-15 hidden lg:block"
+          style={{
+            backgroundImage: `url(${sidePattern})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'right center',
+          }}
+        />
+        <div className="container mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
