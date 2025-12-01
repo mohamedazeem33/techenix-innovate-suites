@@ -17,14 +17,14 @@ const Index = () => {
       <section className="relative pt-32 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Background Image */}
         <div 
-          className="absolute inset-0 z-0 opacity-30"
+          className="absolute inset-0 z-0"
           style={{
             backgroundImage: `url(${heroTechBg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--gradient-hero))] opacity-60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/90"></div>
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         
         {/* Side Pattern Decoration */}
