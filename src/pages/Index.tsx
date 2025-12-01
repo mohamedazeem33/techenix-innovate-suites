@@ -24,7 +24,7 @@ const Index = () => {
             backgroundPosition: 'center',
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background/60"></div>
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         
         {/* Side Pattern Decoration */}
